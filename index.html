@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيادة تقويم النطق وفاق وهبي</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+        .child-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <i data-feather="message-circle" class="w-8 h-8"></i>
+                    <h1 class="text-xl font-bold">عيادة تقويم النطق وفاق وهبي</h1>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="hover:text-gray-200">الرئيسية</a>
+                    <a href="#services" class="hover:text-gray-200">الخدمات</a>
+                    <a href="#reports" class="hover:text-gray-200">التقارير</a>
+                    <a href="#contact" class="hover:text-gray-200">اتصل بنا</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <i data-feather="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div class="md:hidden hidden mt-2" id="mobile-menu">
+                <a href="#home" class="block py-2 hover:bg-purple-700 px-2 rounded">الرئيسية</a>
+                <a href="#services" class="block py-2 hover:bg-purple-700 px-2 rounded">الخدمات</a>
+                <a href="#reports" class="block py-2 hover:bg-purple-700 px-2 rounded">التقارير</a>
+                <a href="#contact" class="block py-2 hover:bg-purple-700 px-2 rounded">اتصل بنا</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+                <h1 class="text-4xl font-bold mb-4">مرحباً بكم في عيادة تقويم النطق</h1>
+                <p class="text-xl mb-6">نقدم لكم نظام متكامل لمتابعة تطور النطق لدى أطفالكم مع الإخصائية وفاق وهبي</p>
+                <div class="flex space-x-4">
+                    <a href="#login" class="bg-white text-purple-600 px-6 py-2 rounded-lg font-bold hover:bg-gray-100 transition">تسجيل الدخول</a>
+                    <a href="#register" class="border border-white text-white px-6 py-2 rounded-lg font-bold hover:bg-purple-700 transition">إنشاء حساب</a>
+                </div>
+            </div>
+            <div class="md:w-1/2" data-aos="fade-left">
+                <img src="http://static.photos/medical/640x360/1" alt="Speech Therapy" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">خدماتنا</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-purple-600 mb-4">
+                        <i data-feather="file-text" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">تقارير يومية وأسبوعية</h3>
+                    <p class="text-gray-600">متابعة دقيقة لتطور حالة الطفل مع تقارير مفصلة بعد كل جلسة</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-purple-600 mb-4">
+                        <i data-feather="trending-up" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">إحصائيات وتقييمات</h3>
+                    <p class="text-gray-600">رسوم بيانية توضح تطور النطق لدى الطفل على المدى القصير والطويل</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-purple-600 mb-4">
+                        <i data-feather="message-square" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">نصائح وإرشادات</h3>
+                    <p class="text-gray-600">إرشادات مخصصة من الإخصائية للوالدين لمساعدة الطفل خارج الجلسات</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reports Access -->
+    <section id="reports" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">الوصول إلى التقارير</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-2xl mx-auto" data-aos="fade-up">
+                <div class="p-8 text-center">
+                    <div class="mx-auto bg-purple-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i data-feather="lock" class="text-purple-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">التقارير متاحة فقط للمستخدمين المسجلين</h3>
+                    <p class="text-gray-600 mb-6">يجب تسجيل الدخول كإخصائي أو ولي أمر لمشاهدة تقارير الأطفال ومتابعة تطورهم</p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="login.html" class="gradient-bg text-white px-6 py-2 rounded-lg font-bold hover:bg-purple-700 transition">تسجيل الدخول</a>
+                        <a href="register.html" class="border border-purple-600 text-purple-600 px-6 py-2 rounded-lg font-bold hover:bg-purple-50 transition">إنشاء حساب</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">اتصل بنا</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div data-aos="fade-right">
+                    <h3 class="text-xl font-bold mb-4">معلومات التواصل</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-2 rounded-full mr-3">
+                                <i data-feather="user" class="text-purple-600 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">الإخصائية</h4>
+                                <p class="text-gray-600">وفاق وهبي</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-2 rounded-full mr-3">
+                                <i data-feather="phone" class="text-purple-600 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">الهاتف / واتساب</h4>
+                                <p class="text-gray-600">+21620524822</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-2 rounded-full mr-3">
+                                <i data-feather="mail" class="text-purple-600 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">البريد الإلكتروني</h4>
+                                <p class="text-gray-600">wifekwahbi0@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <h3 class="text-xl font-bold mb-4">إرسال رسالة</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">الاسم</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">البريد الإلكتروني</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">الرسالة</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="gradient-bg text-white px-6 py-2 rounded-lg font-bold hover:bg-purple-700 transition">إرسال</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-xl font-bold flex items-center">
+                        <i data-feather="message-circle" class="w-6 h-6 mr-2"></i>
+                        عيادة تقويم النطق وفاق وهبي
+                    </h2>
+                    <p class="text-sm mt-2">نظام متكامل لمتابعة تطور النطق لدى الأطفال</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-gray-200">
+                        <i data-feather="facebook" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="hover:text-gray-200">
+                        <i data-feather="instagram" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="hover:text-gray-200">
+                        <i data-feather="twitter" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-purple-400 mt-6 pt-6 text-sm text-center">
+                <p>© 2023 جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Initialize AOS and Feather Icons
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out'
+            });
+            feather.replace();
+        });
+    </script>
+</body>
+</html>
